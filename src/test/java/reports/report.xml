@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.975" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Login Document" name="Userid Test" time="11.574">
+<system-out><![CDATA[
+Given browser "chrome" is open with url "https://www.amazon.in" and reportname "LoginTest" with testname "UidTest".passed
+And i click signin..........................................................passed
+When I enter valid userid "paragguide@yahoo.co.in"..........................passed
+And click continue button...................................................passed
+Then I validate that error message should not come..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Document" name="Password Test" time="8.612">
+<system-out><![CDATA[
+Given userid is valid.......................................................passed
+When valid password "RMinfotech12#&&" is entered............................passed
+Then i should login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Document" name="Search Test - #1.1" time="7.217">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for Shirt in price range 1000.................................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Document" name="Search Test - #1.2" time="4.745">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for Pant in price range 5000..................................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Document" name="Search Test - #1.3" time="4.561">
+<system-out><![CDATA[
+Given i am logged in........................................................passed
+When i search for Tie in price range 500....................................passed
+Then search results must come...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login Document" name="close browser" time="0.935">
+<system-out><![CDATA[
+Given test is executed......................................................passed
+Then close Browser..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
